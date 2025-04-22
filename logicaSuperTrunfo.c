@@ -1,43 +1,79 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    char estadoa;
+    char codigodacartaa[10];
+    char nomedacidadea[50];
+    int populacaoa;  
+    float areaa;
+    float piba; 
+    int pontosturisticosa;
 
-    
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    char estadob;
+    char codigodacartab[10];
+    char nomedacidadeb[50];
+    int populacaob;  
+    float areab;
+    float pibb; 
+    int pontosturisticosb;
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    printf("\nDigite os dados da Primeira Carta:\n");
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+    printf("Estado (letra de A a H): ");
+    scanf(" %c", &estadoa);
+    getchar(); // limpa o Enter
 
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
+    printf("Código da Carta (ex: A01): ");
+    fgets(codigodacartaa, sizeof(codigodacartaa), stdin);
 
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    printf("Nome da Cidade: ");
+    fgets(nomedacidadea, sizeof(nomedacidadea), stdin);
+
+    printf("População: ");
+    scanf("%d", &populacaoa);
+
+    getchar();
+    printf("Área (em km²): ");
+    scanf("%f", &areaa);
+
+    getchar();
+    printf("PIB (em bilhões): ");
+    scanf("%f", &piba);
+
+    getchar();
+    printf("Número de Pontos Turísticos: ");
+    scanf("%d", &pontosturisticosa);
+
+
+    printf("\nDigite os dados da Segunda Carta:\n");
+
+    getchar(); // limpa o Enter
+    printf("Estado (letra de A a H): ");
+    scanf(" %c", &estadob);
+
+    getchar(); // limpa o Enter
+    printf("Código da Carta (ex: A01): ");
+    scanf("%s", codigodacartab);
+
+    printf("Nome da Cidade: ");
+    fgets(nomedacidadeb, sizeof(nomedacidadeb), stdin);
+
+    getchar();
+    printf("População: ");
+    scanf("%d", &populacaob);
+
+    getchar();
+    printf("Área (em km²): ");
+    scanf("%f", &areab);
+
+    getchar();
+    printf("PIB (em bilhões): ");
+    scanf("%f", &pibb);
+
+    getchar();
+    printf("Número de Pontos Turísticos: ");
+    scanf("%d", &pontosturisticosb);
 
     return 0;
 }
